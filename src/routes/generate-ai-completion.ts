@@ -23,9 +23,9 @@ export async function generateAICompletionRoute(app: FastifyInstance) {
 
     const prompt = new PromptTemplate({
       template: `
-      Você responde perguntas sobre programação.
-      O usuário está assistindo um curso com várias aulas.
-      Use apenas o conteúdo das transcições das aulas abaixo para responder a pergunta do usuário.
+      Você responde perguntas sobre um sistema de laboratório.
+      O usuário está precisa tirar dúvidas referentes ao sistema.
+      Use apenas o conteúdo das transcições abaixo para responder a pergunta do usuário.
       Se a resposta não for encontrada nas transcrições, responda que você não sabe, não tente inventar uma resposta.
     
       Transcrições:
